@@ -46,8 +46,8 @@ def clean_text(text):
 
 # Main function
 def main():
-    st.title("Text Emotion Detection")
-    st.subheader("Detect Emotions In Text")
+    st.title("Deteksi Emosi")
+    st.subheader("Deteksi Emosi Dari Teks")
 
     with st.form(key='my_form'):
         raw_text = st.text_area("Type Here (Bahasa Indonesia)")
@@ -66,8 +66,8 @@ def main():
         probability = get_prediction_proba(translated_text)
 
         with col1:
-            st.success("Original Text (Translated)")
-            st.write(translated_text)
+            #st.success("Original Text (Translated)")
+            #st.write(translated_text)
 
             st.success("Prediction")
             emoji_icon = emotions_emoji_dict[prediction]
